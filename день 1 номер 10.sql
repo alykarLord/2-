@@ -1,0 +1,1 @@
+SELECT p.name AS person_name, o.pizza_name, piz.name AS pizzeria_name FROM person p JOIN person_order o ON p.id = o.person_id JOIN pizzeria piz ON o.pizzeria_id = piz.id ORDER BY person_name ASC, o.pizza_name ASC, pizzeria_name ASC;

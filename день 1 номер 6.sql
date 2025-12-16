@@ -1,0 +1,1 @@
+SELECT o.order_date AS action_date, p.name AS person_name FROM person_order o JOIN person p ON o.person_id = p.id WHERE o.order_date = v.visit_date ORDER BY action_date ASC, person_name DESC;           

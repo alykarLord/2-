@@ -1,0 +1,1 @@
+SELECT person_id FROM person_order o WHERE order_date = '2022-01-07' AND NOT EXISTS (SELECT 1 FROM person_visits v WHERE v.visit_date = '2022-01-07' AND v.person_id = o.person_id);
